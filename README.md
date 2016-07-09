@@ -1,0 +1,1 @@
+# amstrong-number-between-2-intervals
