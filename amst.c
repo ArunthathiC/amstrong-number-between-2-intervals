@@ -1,16 +1,24 @@
-#include<stdio.h>
-void main(){
-  int start,end,i,r,res=0,temp;
-  printf("Enter the starting and ending interval:");
-  scanf("%d%d",&start,&end);
-  for(i=start;i<=end;i++){
-   temp=i;
-   while(i!=0){
-    r=i%10;
-    res+=r*r*r;
-    i=i/10;
-   }
-    if(temp==res)
-      printf("%d\n",temp);
+#include <stdio.h>
+int main()
+{
+  int start, end, i, temp, num, rem;
+  printf("Enter two numbers(intervals): ");
+  scanf("%d %d", &n1, &n2);
+  printf("Armstrong numbers between %d an %d are: ", n1, n2);
+  for(i=start+1; i<end; ++i)
+  {
+      temp=i;
+      num=0;
+      while(temp!=0)
+      {
+          rem=(temp%10);
+          num+=rem*rem*rem;
+          temp/=10;
+      }
+      if(i==num)
+      {
+          printf("%d ",i);
+      }
   }
+  return 0;
 }
